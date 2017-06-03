@@ -2,10 +2,10 @@
   socket.on('connect', function () {
     console.log('Connected to server');
 
-    socket.emit('createMessage', {
-      from: 'Sangio',
-      text: 'Yeah, tutto ok'
-    });
+    // socket.emit('createMessage', {
+    //   from: 'Sangio',
+    //   text: 'Yeah, tutto ok'
+    // });
     // socket.emit('createEmail', {
     //   tp: "aboli75@gmail.com",
     //   text: "Ciao, sono Aboli"
@@ -20,5 +20,5 @@
   //   console.log('New Email', email);
   // });
 socket.on('newMessage', function(message) {
-
+  console.log('newMessage', message);
 });
